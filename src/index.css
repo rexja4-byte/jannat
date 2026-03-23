@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Premium Coffee & Teal Palette */
+  --color-base-bg: #FDFBF7; /* Soft natural sunlight */
+  --color-surface: #FFFFFF;
+  --color-ink: #2A140E; /* Deep Coffee Brown */
+  --color-ink-muted: #5C524F; /* Muted brown/charcoal */
+  --color-accent: #20C1C1; /* Vibrant Teal */
+  --color-line: #EAE4DF; /* Warm subtle line */
+  
+  --color-coffee: #2A140E;
+  --color-charcoal: #1F1F1F;
+}
+
+body {
+  background-color: var(--color-base-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.bg-grid-pattern {
+  background-size: 60px 60px;
+  background-image:
+    linear-gradient(to right, rgba(42, 20, 14, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(42, 20, 14, 0.03) 1px, transparent 1px);
+  background-position: center top;
+}
